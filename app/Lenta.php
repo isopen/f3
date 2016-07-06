@@ -16,6 +16,7 @@ class Lenta extends Controller {
     }elseif(!$year && !$number) {
       $condition = "";
     }elseif(($year || $number) && (!is_numeric($year) || !is_numeric($number))) {
+      
       $f3->error(404);
     }
 
