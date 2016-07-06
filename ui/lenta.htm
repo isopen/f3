@@ -1,0 +1,7 @@
+<div>Раздел новостей</div>
+<check if="{{ empty(@news) }}">
+  <div>Нет новостей по указанному фильтру</div>
+</check>
+<repeat group="{{ @news }}" value="{{ @new }}">
+  <div>{{ @new.text }} {{ @new.created_date }}</div>
+</repeat>
